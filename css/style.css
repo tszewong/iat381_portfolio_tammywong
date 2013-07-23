@@ -7,7 +7,7 @@
 body {
 		font-family: font-family: 'Dosis', sans-serif;
 		
-		background: #343434;
+		background: #8c8c8c;
 }
 
 a, a:visited {
@@ -33,7 +33,7 @@ div#header {
 	height: 165px;
 	padding: 0;
 	top: 0;
-	z-index: 100;
+	z-index: 100; /* Setting stack hierarchy*/
 }
 
 
@@ -46,7 +46,8 @@ div#nav {
 	width: 100%;
 	height: 50px;
 	top: 165px;
-	z-index: 0;
+	z-index: 99;
+	opacity: 0.6;
 	
 	box-shadow: 0px 2px 10px 2px #474747;
 }
@@ -64,16 +65,41 @@ div#nav li {
 	text-transform: uppercase;
 }
 
-div#test {
-	margin-top: 350px;
-	height: 1200px;
 
-	background: #3b8abc;
+
+
+/* MAIN CONTENT (GRID SYSTEM) */
+article#works {
+	background: #c3c3c3;
+	max-width: 960px;
+	min-width: 480px;
+	
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+	padding: 275px 0 10px 0;
+
 }
 
+article#works img {
+	width: 100%;
+	height: auto;
+}
 
-/* MAIN CONTENT */
-
+.row {
+	position: relative;
+	height: auto;
+	overflow: hidden;	
+ }
+ 
+.column {
+	float: left;
+	padding: 16px;
+ }
+ 
+ .three { 
+	width: 30%;
+}
 
 
 
