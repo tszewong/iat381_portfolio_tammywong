@@ -5,9 +5,12 @@
  
 /* BASIC SETUP */
 body {
-		font-family: font-family: 'Dosis', sans-serif;
+		font-family: 'Dosis', sans-serif;
 		
 		background: #c3c3c3;
+		
+		margin: 0;
+		padding: 0;
 }
 
 a, a:visited {
@@ -19,13 +22,62 @@ a:hover, a:active {
 	color: #d3d3d3;
 	text-decoration: none;
  }
+ 
+ div#name {
+	font-family: 'Dosis', sans-serif;
+	margin: 0 auto;
+	
+	width: 100%;
+	height: auto;
+	
+	max-width: 720px;
+	min-width: 480px;
+	
+	z-index: 100; /* Setting stack hierarchy*/
+	
+	padding-top: 0px;
+ }
+ 
+ h1#tammywong {
+	font-weight: lighter;
+	font-family: 'Kranky', cursive;
+	font-size: 75px;
+
+	position: relative;
+	height: auto;
+	overflow: hidden;	
+	padding: 0;
+	margin: 0;
+	
+ }
+ 
+ span#y {   /* special character adjustment for 'y' of 'tammy' */
+	font-variant: small-caps;
+	font-size: 85%;
+	font-weight: bold;
+ }
+ 
+ span#wong {
+	color: #C3C2C2;
+ }
+ 
+ h1#position {
+	
+	color: #8FC2DC;
+	
+	font-size: 15px;
+	font-weight: 100;
+	text-transform: uppercase;
+
+	padding: 0;
+	margin: 0;
+
+ }
 
 /* HEADER AND NAVIGATION */
 
 div#header {
 	position: fixed;
-
-	/*background: #343434 url(http://www.sfu.ca/~tsw9/courses/iat381/project2/images/background.jpg)  repeat-x center top;*/
 	
 	background-image: -webkit-gradient(radial, center center, 250, center center, 1000, from(#505050), to(#343434));
 	background-image: -moz-radial-gradient(#505050, #343434);
@@ -40,13 +92,6 @@ div#header {
 	z-index: 100; /* Setting stack hierarchy*/
 }
 
-div#header img {  /*adjusts sizing for header logo*/
-	width: 100%;
-	height: auto;
-	
-	max-width: 443px;
-	min-width: 250px;
-}
 
 div#divider {
 	position: fixed;	
@@ -56,7 +101,7 @@ div#divider {
 	
 	width: 100%;
 	height: 10px;
-	top: 165px;
+	top: 164px;
 	z-index: 98;
 }
 
@@ -70,7 +115,7 @@ div#nav {
 	
 	width: 100%;
 	height: 50px;
-	top: 170px;
+	top: 169px;
 	z-index: 98;
 	opacity: 0.6;
 	
@@ -98,6 +143,7 @@ article#works {
 	background: #e3e3e3;
 	max-width: 960px;
 	min-width: 480px;
+	min-height: 780px;
 	
 	height: auto;
 	width: 100%;
@@ -108,50 +154,9 @@ article#works {
 	border-radius:15px;
 	
 	box-shadow: 0px 5px 35px #787878;
-	
-	
-	
 
 }
 
-article#works img {
-	width: 100%;
-	height: auto;
-	margin-top: 10px;
-
-
-}
-
-.row {
-	position: relative;
-	height: auto;
-	overflow: hidden;	
-	padding: 0;
-	margin: 0;
-	
- }
- 
-.column {
-	float: left;
-	
-	
- }
- 
- .three {    /* individual work project image blocks*/
-	width: 33.3333333333%;   /* standardizing width for all images */
-	
-}
-
-#works ul {
-	padding: 15px;
-	
-}
-
-li {
-	display: inline-block;
-	vertical-align: top;
-	margin: 0px 10px;
-}
 
 
 
@@ -159,6 +164,160 @@ li {
 footer {
 	font-size: 14px;
 	color: #343434;
-	text-align:center;	
+	text-align: center;	
 	margin: 20px 40px;
+	clear: both;
 }
+
+
+
+/* GRID SYSTEM */
+#wrapper{   				/* Wraps whole container for grid system*/
+	margin-top: 10px;
+	width: 100%;
+	display: block;
+}
+
+#container { 				/* Width of grid system */
+	position: relative;
+	width: 900px;
+	margin: 0 auto 25px;
+	padding-bottom: 10px;
+	
+}
+.grid {						/* Grid box css configuration */
+	width: 188px;
+	min-height: 20px;
+	padding: 15px;
+	background: #fff;
+	margin: 8px;
+	font-size: 12px;
+	float: left;
+	/*box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);*/
+
+}
+
+.video { 	/* Video/Animation project elements */
+	box-shadow: 0 1px 3px rgba(200,52,52,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(200,52,52,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(200,52,52,0.4);
+}
+
+.gd { 	/* Graphic design project elements */
+	box-shadow: 0 1px 3px rgba(14,151,201,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(14,151,201,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(14,151,201,0.4);
+}
+
+.misc {		/* Misc project elements */
+	box-shadow: 0 1px 3px rgba(100,172,54,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(100,172,54,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(100,172,54,0.4);
+}
+
+.category{		/* CSS Configuration for Category boxes (gd, video, misc) */
+	width: 188px;
+	min-height: 20px;
+	background: #fff;
+	margin: 8px;
+	font-size: 12px;
+	float: left;
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+
+
+}
+
+.grid strong {	/* Project Title */
+	border-bottom:1px solid #ccc;
+	margin: 10px 0;
+	display: block;
+	padding: 0 0 5px;
+	font-size: 17px;
+	display: none;
+}
+
+.grid p {		/* Project description */
+	display: none;
+}
+
+.grid .imgholder img, .category .imgholder img{  /* Grid images */
+	max-width: 100%;
+	background: #ccc;
+	display: block;
+}
+
+
+/* --- Container configuration ---------------------------------------------------------- */
+.viewport {		/* Window of fade effect */
+    float: left;
+    overflow: hidden;
+    position: relative;
+	
+	
+}
+
+/* This is so that the 2nd thumbnail in each row fits snugly. You will want to add a similar
+   class to the last thumbnail in each row to get rid of the margin-right. */
+.no-margin {
+    margin-right: 0;
+}
+
+/* --- Link configuration that contains the project image and label --------------------- */
+.viewport a {
+    display: block;
+    position: relative;
+	
+}
+
+
+/* --- Project Title & Label configuration ----------------------------------------------- */
+.viewport a span { /* Project Title */
+    display: none;
+    font-size: 2em;
+    font-weight: bold;
+    top: 20%;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+	height: auto;
+	padding: 10px 0;
+    z-index: 50;
+	
+	vertical-align: middle;
+
+}
+
+
+.viewport a span em {  /* Project Label */
+        display: block;
+        font-size: 15px;
+        font-weight: normal;
+}
+
+/* --- Hover backgrounds ------------------------------------------------------------ */
+.redbg {
+    background-color: rgba(200, 52, 52, 0.75);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+}
+
+.bluebg {
+    background-color: rgba(14, 151, 201, 0.75);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+}
+
+.greenbg {
+    background-color: rgba(100, 172, 54, 0.75);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+}
+
+em {
+        color: #ccc;
+    }
