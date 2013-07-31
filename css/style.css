@@ -12,18 +12,24 @@ body {
 		margin: 0;
 		padding: 0;
 }
-
-a, a:visited {
+	
+a, a:visited { 	/* Normal link styling */
 	color: #fff;
 	text-decoration: none;
 }
 
-a:hover, a:active {
+ .project a {		/* Project work link styling */
+	color: #3b8abc;
+ }
+
+#nav a:hover, #nav a:active, #project a:hover, #project a:active {
 	color: #d3d3d3;
 	text-decoration: none;
  }
  
- div#name {
+
+ 
+ div#name {	/* Header for whole name */
 	font-family: 'Dosis', sans-serif;
 	margin: 0 auto;
 	
@@ -38,6 +44,7 @@ a:hover, a:active {
 	padding-top: 0px;
  }
  
+ /* Headings styling */
  h1#tammywong {
 	font-weight: lighter;
 	font-family: 'Kranky', cursive;
@@ -51,17 +58,39 @@ a:hover, a:active {
 	
  }
  
+ h2 {
+	padding: 0;
+	margin: 0;
+	
+	font-variant: small-caps;
+ }
+ 
+ h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 32px;
+	text-align: center;
+	
+ }
+ 
+ h4 {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	text-align: center;
+ }
+ 
  span#y {   /* special character adjustment for 'y' of 'tammy' */
 	font-variant: small-caps;
 	font-size: 85%;
 	font-weight: bold;
  }
  
- span#wong {
+ span#wong {						/* Last name */
 	color: #C3C2C2;
  }
  
- h1#position {
+ h1#position {					/* My position title */
 	
 	color: #8FC2DC;
 	
@@ -76,7 +105,7 @@ a:hover, a:active {
 
 /* HEADER AND NAVIGATION */
 
-div#header {
+div#header {						/* Header */
 	position: fixed;
 	
 	background-image: -webkit-gradient(radial, center center, 250, center center, 1000, from(#505050), to(#343434));
@@ -93,7 +122,7 @@ div#header {
 }
 
 
-div#divider {
+div#divider {						/* Blue divider between header and navigation bar */
 	position: fixed;	
 	
 	background-image: -webkit-gradient(radial, center center, 0, center center, 850, from(#3b8abc), to(#505050));
@@ -105,7 +134,7 @@ div#divider {
 	z-index: 98;
 }
 
-div#nav {
+div#nav {								/* Navigation bar */
 	position: fixed;
 
 	background-color: #000;
@@ -122,11 +151,11 @@ div#nav {
 	box-shadow: 0px 2px 10px 2px #474747;
 }
 
-div#nav ul {
+div#nav ul {						/* Navigation bar elements */
 	text-align: center;
 }
 
-div#nav li {
+div#nav li {						/* Navigation bar elements */
 	display: inline-block;
 	padding: 0;
 	margin: 0px 25px 0 25px;
@@ -139,11 +168,28 @@ div#nav li {
 
 
 /* MAIN CONTENT (GRID SYSTEM) */
-article#works {
+article#works {									/* Container of entire grid system */
 	background: #e3e3e3;
 	max-width: 960px;
 	min-width: 480px;
 	min-height: 780px;
+	
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+	padding: 250px 0 10px 0;
+	
+	border: 5px solid rgba(255, 255, 255, .5);
+	border-radius:15px;
+	
+	box-shadow: 0px 5px 35px #787878;
+
+}
+
+article#projects {								/* Container of project works */
+	background: #e3e3e3;
+	max-width: 960px;
+	min-width: 480px;
 	
 	height: auto;
 	width: 100%;
@@ -186,18 +232,92 @@ footer {
 	
 }
 .grid {						/* Grid box css configuration */
-	width: 188px;
+	/*width: 188px;*/
 	min-height: 20px;
 	padding: 15px;
 	background: #fff;
 	margin: 8px;
 	font-size: 12px;
 	float: left;
-	/*box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
 	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
-	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);*/
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
 
 }
+
+.project {							/* Project boxes */
+	padding: 15px;
+	background: #fff;
+	margin: 20px auto;
+	width: 70%; /* Project image container shrinking for left and right margin */
+	height: auto;
+	display: block;
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+}
+
+
+.project img {					/* Project image box */
+	width: 100%;
+	height: auto;	
+}
+
+.picture {					/* Profile picture adjustments */
+	padding: 15px;
+	background: #fff;
+	margin: 5%;
+	width: 25%;
+	height: auto;
+	display: block;
+	float: right;
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+}
+
+.picture img {							/* My Picture */
+	width: 100%; /* image container shrinking for left and right margin */
+	height: auto;
+}
+
+.overview {						/* Project overview box */
+	display: block;
+	vertical-align: top;
+	width: 70%;
+	min-width: 100px;
+	margin: 0 auto;
+	height: auto;
+}
+
+.desc {								/* Project description box */
+	display: block;
+	width: 70%;
+	height: auto;
+
+}
+
+.contact {						/* Contact info list style */
+	text-align: center;
+	list-style: none;
+}
+
+.overview ul, .desc ul {		/* Project info list of information */
+	list-style: none;
+	margin-left: -1.5em;
+	margin-top: 0;
+	font-size: 15px;
+}
+
+.contact ul {					/* Contact info list */
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
 
 .video { 	/* Video/Animation project elements */
 	box-shadow: 0 1px 3px rgba(200,52,52,0.4);
@@ -303,21 +423,43 @@ footer {
 .redbg {
     background-color: rgba(200, 52, 52, 0.75);
     color: #fff;
-    text-shadow: #000 0px 0px 20px;
+    text-shadow: #000 0px 0px 10px;
 }
 
 .bluebg {
     background-color: rgba(14, 151, 201, 0.75);
     color: #fff;
-    text-shadow: #000 0px 0px 20px;
+    text-shadow: #000 0px 0px 10px;
 }
 
 .greenbg {
     background-color: rgba(100, 172, 54, 0.75);
     color: #fff;
-    text-shadow: #000 0px 0px 20px;
+    text-shadow: #000 0px 0px 10px;
 }
 
-em {
+.infobg {
+    background-color: rgba(59, 138, 188, 0.75);
+    color: #fff;
+    text-shadow: #000 0px 0px 10px;
+}
+
+em {  /* Project description */
         color: #ccc;
     }
+	
+.button {			/* View my work button */
+	padding: 5px 15px;
+	margin: 20px auto;
+	width: 70%; /* Project image container shrinking for left and right margin */
+	height: auto;
+	display: block;
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+}
+
+.button:hover {		/* View my work button hover adjustment */
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
