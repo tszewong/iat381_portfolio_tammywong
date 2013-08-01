@@ -1,7 +1,10 @@
+/************************************** Simple Slideshow **************************************/
+
 #slideshow {
 	padding: 15px;
 	background: #fff;
-	margin: 50px auto;
+	margin: 0 auto;
+	margin-bottom: 50px;
 
 	display: block;
 
@@ -9,26 +12,45 @@
 	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
 	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
 	
+	width: 100%;
+	height: auto;
+	
+	position: relative;
 
 }
 
 #slideshow ul {
 	position:relative;
 	overflow:hidden;
-	margin:0;
-	padding:0;
+	margin:0 auto;
+	padding:0 15%;
+	
 }
 
 #slideshow ul li {
 	position:absolute;
 	top:0;
 	left:0;
-	margin:0;
+	width: 150%;
+	height: auto;
 	padding:0;
 	list-style:none;
+
 	
 }
 
+#slideshow img {
+	
+	position: absolute;
+	top: 25%;
+
+    width: 50%;
+	z-index: 0;
+	margin: -8% 0 -25%;
+
+}
+
+/************************************** Slide buttons **************************************/
 #pagination {
 	clear:both;
 	width:75px;
@@ -54,6 +76,7 @@
 	background-position:0 10px;
 }
 
+/************************************** Image captions **************************************/
 .caption {
 	width:100%;
 	margin:0;
@@ -66,4 +89,6 @@
 	color:#fff;
 	border-top:1px solid #000;
 	background:rgba(0,0,0,0.6);
+	
+	z-index: 1;
 }

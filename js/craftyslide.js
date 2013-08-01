@@ -8,16 +8,22 @@
 */
 
 (function ($) {
-    $.fn.craftyslide = function (options) {
 
-        // Defaults
-        var defaults = {
-            "width": 673,
-            "height": 365,
+	$.fn.craftyslide = function (options) {
+
+
+		var defaults = {
+            "width": "70%",
+            "height": 325,
             "pagination": true,
             "fadetime": 350,
             "delay": 5000
         };
+		
+		var el = $('#first'),
+    curHeight = el.height(),
+    autoHeight = el.css('height', 'auto').height();
+el.height(curHeight).animate({height: autoHeight}, 1000);
 
         var options = $.extend(defaults, options);
 

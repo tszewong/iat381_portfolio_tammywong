@@ -4,7 +4,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width" /> <!-- Disables page scaling for mobile -->
-		<!--<link rel="stylesheet" media="(max-width:480px)" type="text/css" href="css/style_mobile.css"/> <!-- Adaptive design for mobile -->
 		
 		<title>Tammy Wong - Motion Designer</title>
 		
@@ -15,6 +14,8 @@
 		
 		<!-- Main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link rel="stylesheet" media="(max-width:720px)" type="text/css" href="./css/style_header.css"/> <!-- Disable fixed header to avoid obstructing users' view on small screens -->
+		<link rel="stylesheet" media="(max-width:480px)" type="text/css" href="./css/style_mobile.css"/> <!-- Adaptive design for mobile -->
 		
 		<!-- Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>	
@@ -23,10 +24,11 @@
 		<!-- Javascript and jQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="js/jquery.fittext.js"></script> <!-- For size adaptive header -->
+		<script src="js/jquery.fitvids.js"></script> <!-- For size adaptive video -->
 		
 		<script type="text/javascript" src="js/blocksit.js"></script>
 		<script type="text/javascript" src="js/hover.js"></script>
-
+		
 		<!-- Craftyslide Plugin -->
 		<script src="js/craftyslide.js"></script>
 		<link rel="stylesheet" href="css/craftyslide.css" />
@@ -68,14 +70,14 @@
 					</div>
 					
 					<div class="project img">
-						<img src="images/work/cuckoo.jpg" width="400px" height="100px" />
+						<img src="images/work/cuckoo.jpg" width="400" height="100" alt="Cuckoo Egg Lengths" />
 					</div>             
 				
 
 					<div class="project overview">
 						<h2>Overview</h2>
 						<ul>
-							<li>Information design assignment communicating the differences of cuckoo egg lengths fostered in different birds' nests. The inner diameter of each circle is associated to their actual average egg lengths.</li></br>
+							<li class="linespace">Information design assignment communicating the differences of cuckoo egg lengths fostered in different birds' nests. The inner diameter of each circle is associated to their actual average egg lengths.</li>
 							<li>Throughout this assignment, I have developed skills in designing graphs graphically, through the use of colors and information clustering.</li>
 						</ul>
 					</div>
@@ -96,7 +98,7 @@
 					
 					
 					<a href="./index.html"><div class="bluebg button">
-						<h4>BACK</h4>
+						<h4>VIEW OTHER WORK</h4>
 					</div></a>
 
 

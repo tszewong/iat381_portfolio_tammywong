@@ -4,7 +4,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width" /> <!-- Disables page scaling for mobile -->
-		<!--<link rel="stylesheet" media="(max-width:480px)" type="text/css" href="css/style_mobile.css"/> <!-- Adaptive design for mobile -->
 		
 		<title>Tammy Wong - Motion Designer</title>
 		
@@ -15,6 +14,8 @@
 		
 		<!-- Main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link rel="stylesheet" media="(max-width:720px)" type="text/css" href="./css/style_header.css"/> <!-- Disable fixed header to avoid obstructing users' view on small screens -->
+		<link rel="stylesheet" media="(max-width:480px)" type="text/css" href="./css/style_mobile.css"/> <!-- Adaptive design for mobile -->
 		
 		<!-- Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>	
@@ -23,13 +24,14 @@
 		<!-- Javascript and jQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="js/jquery.fittext.js"></script> <!-- For size adaptive header -->
+		<script src="js/jquery.fitvids.js"></script> <!-- For size adaptive video -->
 		
 		<script type="text/javascript" src="js/blocksit.js"></script>
 		<script type="text/javascript" src="js/hover.js"></script>
 		
 		<!-- Craftyslide Plugin -->
-		<link rel="stylesheet" href="css/craftyslide.css" />
 		<script src="js/craftyslide.js"></script>
+		<link rel="stylesheet" href="css/craftyslide.css" />
 		
 
 
@@ -69,11 +71,10 @@
 					
 					<div id="slideshow">
 					  <ul>
-						<li><img src="images/work/ossia1.png" title="Branded logo of Ossia, a music school." /></li>
-						<li><img src="images/work/ossia2.png" title="Business cards— front and back." /></li>
-						<li><img src="images/work/ossia3.png" title="Logo placed on applications: example 1." /></li>
-						<li><img src="images/work/ossia4.png" title="Logo placed on applications: example 2." /></li>
-						<li><img src="images/work/ossia5.png" title="Logo placed on applications: example 3." /></li>
+						<li><img src="images/work/ossia1.png" alt="" title="Branded logo of Ossia, a music school." /></li>
+						<li><img src="images/work/ossia2.png" alt="" title="Business cards— front and back." /></li>
+						<li><img src="images/work/ossia3.png" alt="" title="Logo placed on applications: example 1." /></li>
+						<li><img src="images/work/ossia4.png" alt="" title="Logo placed on applications: example 2." /></li>
 						</ul>
 					</div>               
 					  
@@ -82,8 +83,8 @@
 					<div class="project overview">
 						<h2>Overview</h2>
 						<ul>
-							<li>The project required that we create a corporate identity, design the company's logo, business cards, and applications. 
-					Ossia is a music school that invites artists, creatives, and talented people to succeed.</li>
+							<li>The project required that we create a corporate identity— design the company's logo, business cards, and applications. 
+					Ossia is a music school that invites artists, creatives, and talented people to succeed. Color theories, content hierarchy and alignment was practiced in this project, and I've been able to develop my teamwork skills as I collaborated with another designer who has come from a different design background. </li>
 						</ul>
 					</div>
 					
@@ -94,6 +95,10 @@
 							<li>Conceptual design</li>
 							<li>Branding</li>
 						</ul>
+						<h2>Collaborator</h2>
+						<ul>
+							<li>Lynn McDonald</li>
+						</ul>
 						<h2>Tools used</h2>
 						<ul>
 							<li>Illustrator</li>
@@ -103,7 +108,7 @@
 					
 					
 					<a href="./index.html"><div class="bluebg button">
-						<h4>BACK</h4>
+						<h4>VIEW OTHER WORK</h4>
 					</div></a>
 
 
@@ -120,17 +125,13 @@
 		</footer>
 			
 		<script type="text/javascript">
-		<!-- Calling jQuery function to resize header-->
+		<!-- Calling jQuery function to resize header -->
 			$("#tammywong").fitText(0.7);  
+			
+		<!-- Calling jQuery function for slideshow -->
+			$("#slideshow").craftyslide();
 		</script>
 			
-		<script>
-		  $("#slideshow").craftyslide();
-		</script>
-		
-		
-		
-		
 	</body>
 	
 </html>

@@ -4,7 +4,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width" /> <!-- Disables page scaling for mobile -->
-		<!--<link rel="stylesheet" media="(max-width:480px)" type="text/css" href="css/style_mobile.css"/> <!-- Adaptive design for mobile -->
 		
 		<title>Tammy Wong - Motion Designer</title>
 		
@@ -15,6 +14,8 @@
 		
 		<!-- Main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link rel="stylesheet" media="(max-width:720px)" type="text/css" href="./css/style_header.css"/> <!-- Disable fixed header to avoid obstructing users' view on small screens -->
+		<link rel="stylesheet" media="(max-width:480px)" type="text/css" href="./css/style_mobile.css"/> <!-- Adaptive design for mobile -->
 		
 		<!-- Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>	
@@ -23,10 +24,11 @@
 		<!-- Javascript and jQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="js/jquery.fittext.js"></script> <!-- For size adaptive header -->
+		<script src="js/jquery.fitvids.js"></script> <!-- For size adaptive video -->
 		
 		<script type="text/javascript" src="js/blocksit.js"></script>
 		<script type="text/javascript" src="js/hover.js"></script>
-
+		
 		<!-- Craftyslide Plugin -->
 		<script src="js/craftyslide.js"></script>
 		<link rel="stylesheet" href="css/craftyslide.css" />
@@ -68,14 +70,14 @@
 					</div>
 					
 					<div class="project img">
-						<img src="images/work/reignac.png"  />
+						<img src="images/work/reignac.png" alt="Reignac-Sur-Indre"  />
 					</div>             
 				
 
 					<div class="project overview">
 						<h2>Overview</h2>
 						<ul>
-							<li>Reignac-Sur-Indre, located in France, contains the largest plant maze in the world. Having required to design a poster for a famous place and to relate to swiss design, I have specifically decided to portray the very structure of the maze through Illustrator. The design was mainly inspired by Josef Müller-Brockmann.</li></br>
+							<li class="linespace">Reignac-Sur-Indre, located in France, contains the largest plant maze in the world. Having required to design a poster for a famous place and to relate to swiss design, I have specifically decided to portray the very structure of the maze through Illustrator. The design was mainly inspired by Josef Müller-Brockmann.</li>
 							<li>This project has mainly allowed me to develop and refine my skills as a graphic designer, specifically in color thoery, typography, grid design, and hierarchy.</li>
 						</ul>
 					</div>
@@ -95,7 +97,7 @@
 					
 					
 					<a href="./index.html"><div class="bluebg button">
-						<h4>BACK</h4>
+						<h4>VIEW OTHER WORK</h4>
 					</div></a>
 
 
@@ -112,7 +114,7 @@
 		</footer>
 			
 		<script type="text/javascript">
-		<!-- Calling jQuery function to resize header-->
+		<!-- Calling jQuery function to resize header -->
 			$("#tammywong").fitText(0.7);  
 		</script>
 

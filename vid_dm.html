@@ -4,7 +4,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width" /> <!-- Disables page scaling for mobile -->
-		<!--<link rel="stylesheet" media="(max-width:480px)" type="text/css" href="css/style_mobile.css"/> <!-- Adaptive design for mobile -->
 		
 		<title>Tammy Wong - Motion Designer</title>
 		
@@ -15,6 +14,8 @@
 		
 		<!-- Main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link rel="stylesheet" media="(max-width:720px)" type="text/css" href="./css/style_header.css"/> <!-- Disable fixed header to avoid obstructing users' view on small screens -->
+		<link rel="stylesheet" media="(max-width:480px)" type="text/css" href="./css/style_mobile.css"/> <!-- Adaptive design for mobile -->
 		
 		<!-- Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>	
@@ -68,14 +69,14 @@
 					</div>
 					
 					<div class="project">
-						<iframe src="http://player.vimeo.com/video/55425055" width="670.5px" height="375.48px"
- frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						<iframe src="http://player.vimeo.com/video/55425055" width="671" height="376"></iframe>
 					</div>
 					
 					<div class="project overview">
 						<h2>Overview</h2>
 						<ul>
-							<li>A one day project, introducing what Difference Makers are to a target audience aged 12-18. It was my first time experimenting with continuity editing with motion graphics!</li>
+							<li class="linespace">A one day project, introducing what Difference Makers are to a target audience aged 12-18. It was my first time experimenting with continuity editing with motion graphics within huge time constraints.</li>
+							<li>This inspirational piece was created through the rapid process of storyboarding, illustrating and animating. This was the project where I have first practiced with animating in 3D space offered in After Effects.</li>
 						</ul>
 					</div>
 					
@@ -98,7 +99,7 @@
 					</div>
 					
 					<a href="./index.html"><div class="redbg button">
-						<h4>BACK</h4>
+						<h4>VIEW OTHER WORK</h4>
 					</div></a>
 
 
@@ -117,9 +118,6 @@
 		<script type="text/javascript">
 		<!-- Calling jQuery function to resize header-->
 			$("#tammywong").fitText(0.7);  
-		</script>
-		
-		<script type="text/javascript">
 		<!-- Calling jQuery function to resize video -->
 			$("#wrapper").fitVids();
 		</script>

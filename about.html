@@ -4,7 +4,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width" /> <!-- Disables page scaling for mobile -->
-		<!--<link rel="stylesheet" media="(max-width:480px)" type="text/css" href="css/style_mobile.css"/> <!-- Adaptive design for mobile -->
 		
 		<title>Tammy Wong - Motion Designer</title>
 		
@@ -15,6 +14,8 @@
 		
 		<!-- Main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link rel="stylesheet" media="(max-width:720px)" type="text/css" href="./css/style_header.css"/> <!-- Disable fixed header to avoid obstructing users' view on small screens -->
+		<link rel="stylesheet" media="(max-width:480px)" type="text/css" href="./css/style_mobile.css"/> <!-- Adaptive design for mobile -->
 		
 		<!-- Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>	
@@ -23,17 +24,17 @@
 		<!-- Javascript and jQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="js/jquery.fittext.js"></script> <!-- For size adaptive header -->
+		<script src="js/jquery.fitvids.js"></script> <!-- For size adaptive video -->
 		
 		<script type="text/javascript" src="js/blocksit.js"></script>
 		<script type="text/javascript" src="js/hover.js"></script>
-
+		
 		<!-- Craftyslide Plugin -->
 		<script src="js/craftyslide.js"></script>
 		<link rel="stylesheet" href="css/craftyslide.css" />
-		
-
 
 </head>
+
 
 	<body>
 		<!-- Header and navigation -->
@@ -43,12 +44,9 @@
 				<h1 id="tammywong">tamm<span id="y">y</span><span id="wong">wong</span></h1>
 				<h1 id="position">motion designer</h1>
 			</div></a>
-
-		
 		</div>
 		
 		<div id="divider"></div>
-		
 		<div id="nav">
 			<ul>
 				<li><a href="./index.html">Work</a></li>
@@ -67,19 +65,19 @@
 						<h3>HI THERE!</h3>
 					</div>
 					
-					<div class="picture">
-						<img src="images/me.jpg"  />
-					</div>               
-				
 
 					<div class="project overview">
 						<h2>It's me— tammy.</h2>
+						<div class="picture">
+							<img src="images/me.jpg" alt="My Photo" />
+						</div> 
 						<ul>
-							<li>A dreamer of ideas that provoke the minds of others, and a doer who turns ideas into reality. I'm a senior student at Simon Fraser University pursuing Interactive Arts & Technology with
-							the concentration in Media Arts.</li></br>
+							<li class="linespace">A dreamer of ideas that provoke the minds of others, and a doer who turns ideas into reality. I'm a senior student at Simon Fraser University pursuing a degree in Interactive Arts & Technology with the concentration in Media Arts.</li>
+
 							<li> Working as a videographer and motion designer at the Rick Hansen
-							Foundation, I have developed a compelling approach towards storytelling.</li>
+							Foundation, I have developed a compelling approach towards storytelling with moving pixels and particles!</li>
 						</ul>
+	
 					</div>
 					
 					
@@ -101,10 +99,7 @@
 						<h4>VIEW MY WORK</h4>
 					</div></a>
 
-
 			</section>
-			
-			
 			<!-- end of Project info section -->
 		</article>
 		

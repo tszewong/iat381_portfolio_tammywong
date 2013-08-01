@@ -13,12 +13,12 @@ body {
 		padding: 0;
 }
 	
-a, a:visited { 		/* Normal link styling */
+a, a:visited { 				/* Normal link styling */
 	color: #fff;
 	text-decoration: none;
 }
 
- .project a {		/* Project work link styling */
+ .project a {				/* Project work link styling */
 	color: #3b8abc;
  }
 
@@ -39,7 +39,7 @@ a, a:visited { 		/* Normal link styling */
 	max-width: 720px;
 	min-width: 480px;
 	
-	z-index: 100; 				/* Setting stack hierarchy*/
+	z-index: 100;				 /* Setting stack hierarchy*/
 	
 	padding-top: 0px;
  }
@@ -81,7 +81,7 @@ a, a:visited { 		/* Normal link styling */
 	text-align: center;
  }
  
- span#y {   /* special character adjustment for 'y' of 'tammy' */
+ span#y {  						 /* special character adjustment for 'y' of 'tammy' */
 	font-variant: small-caps;
 	font-size: 85%;
 	font-weight: bold;
@@ -117,13 +117,13 @@ div#header {						/* Header */
 	color: #fff;
 	text-align: center;
 	
-	position: fixed;
+	position: absolute;
 	
 	width: 100%;
 	height: 165px;
 	padding: 0;
 	top: 0;
-	z-index: 100; 		/* Setting stack hierarchy*/
+	z-index: 100; 				/* Setting stack hierarchy*/
 }
 
 
@@ -131,7 +131,7 @@ div#divider {						/* Blue divider between header and navigation bar */
 	background-image: -webkit-gradient(radial, center center, 0, center center, 850, from(#3b8abc), to(#505050));
 	background-image: -moz-radial-gradient(#505050, #3b8abc);
 	
-	position: fixed;
+	position: absolute;
 	
 	width: 100%;
 	height: 10px;
@@ -139,13 +139,13 @@ div#divider {						/* Blue divider between header and navigation bar */
 	z-index: 98;
 }
 
-div#nav {								/* Navigation bar */	
+div#nav {							/* Navigation bar */	
 	background-color: #000;
 	
 	color: #fff;
 	font-size: 1em;
 	
-	position: fixed;
+	position: absolute;
 	
 	width: 100%;
 	height: 50px;
@@ -250,11 +250,11 @@ footer {
 
 }
 
-.project {						/* Project boxes */
+.project {							/* Project boxes */
 	padding: 15px;
 	background: #fff;
 	margin: 20px auto;
-	width: 70%; 				/* Project image container shrinking for left and right margin */
+	width: 70%; 					/* Project image container shrinking for left and right margin */
 	height: auto;
 	display: block;
 	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
@@ -297,7 +297,7 @@ footer {
 	height: auto;
 }
 
-.desc {								/* Project description box */
+.desc {							/* Project description box */
 	display: block;
 	width: 70%;
 	height: auto;
@@ -326,25 +326,25 @@ footer {
 
 
 
-.video { 				/* Video/Animation project elements */
+.video { 	/* Video/Animation project elements */
 	box-shadow: 0 2px 5px rgba(200,52,52,0.4);
 	-moz-box-shadow: 0 2px 5px rgba(200,52,52,0.4);
 	-webkit-box-shadow: 0 2px 5px rgba(200,52,52,0.4);
 }
 
-.gd { 					/* Graphic design project elements */
+.gd { 		/* Graphic design project elements */
 	box-shadow: 0 2px 5px rgba(14,151,201,0.4);
 	-moz-box-shadow: 0 2px 5px rgba(14,151,201,0.4);
 	-webkit-box-shadow: 0 2px 5px rgba(14,151,201,0.4);
 }
 
-.misc {					/* Misc project elements */
+.misc {		/* Misc project elements */
 	box-shadow: 0 2px 5px rgba(100,172,54,0.4);
 	-moz-box-shadow: 0 2px 5px rgba(100,172,54,0.4);
 	-webkit-box-shadow: 0 2px 5px rgba(100,172,54,0.4);
 }
 
-.category{					/* CSS Configuration for Category boxes (gd, video, misc) */
+.category{		/* CSS Configuration for Category boxes (gd, video, misc) */
 	width: 188px;
 	min-height: 20px;
 	background: #fff;
@@ -358,7 +358,7 @@ footer {
 
 }
 
-.grid strong {						/* Project Title */
+.grid strong {			/* Project Title */
 	border-bottom:1px solid #ccc;
 	margin: 10px 0;
 	display: block;
@@ -367,11 +367,11 @@ footer {
 	display: none;
 }
 
-.grid p {						/* Project description */
+.grid p {			/* Project description */
 	display: none;
 }
 
-.grid .imgholder img, .category .imgholder img{  	/* Grid images */
+.grid .imgholder img, .category .imgholder img{  /* Grid images */
 	max-width: 100%;
 	background: #ccc;
 	display: block;
@@ -379,7 +379,7 @@ footer {
 
 
 /************************************** GRID CONTAINER ADJUSTMENTS **************************************/
-.viewport {		/* Window of fade effect */
+.viewport {			/* Window of fade effect */
     float: left;
     overflow: hidden;
     position: relative;
@@ -387,7 +387,7 @@ footer {
 	
 }
 
-/* This is so that the 2nd thumbnail in each row fits well. */
+/* This is so that the 2nd thumbnail in each row fits snugly. */
 .no-margin {
     margin-right: 0;
 }
@@ -419,7 +419,7 @@ footer {
 }
 
 
-.viewport a span em {  	/* Project Description */
+.viewport a span em {  				/* Project Description */
         display: block;
         font-size: 15px;
         font-weight: normal;
@@ -427,35 +427,35 @@ footer {
 }
 
 /************************************** HOVER BACKGROUNDS **************************************/
-.redbg {					/* Video/Animation header background */
+.redbg {
     background-color: rgba(200, 52, 52, 0.75);
     color: #fff;
     text-shadow: #000 0px 0px 5px;
 }
 
-.bluebg {				/* Graphic Design header background */
+.bluebg {
     background-color: rgba(14, 151, 201, 0.75);
     color: #fff;
     text-shadow: #000 0px 0px 5px;
 }
-	
-.greenbg {				/* Miscellaneous header background */
+
+.greenbg {
     background-color: rgba(100, 172, 54, 0.75);
     color: #fff;
     text-shadow: #000 0px 0px 5px;
 }
 
-.infobg {				/* About and Contact header background */
+.infobg {
     background-color: rgba(59, 138, 188, 0.75);
     color: #fff;
     text-shadow: #000 0px 0px 5px;
 }
 
 	
-.button {						/* View my work button */
+.button {					/* View my work button */
 	padding: 5px 15px;
 	margin: 20px auto;
-	width: 70%; 				/* Project image container shrinking for left and right margin */
+	width: 70%; 			/* Project image container shrinking for left and right margin */
 	height: auto;
 	display: block;
 	box-shadow: 0 2px 5px rgba(34,25,25,0.4);
@@ -463,19 +463,17 @@ footer {
 	-webkit-box-shadow: 0 2px 5px rgba(34,25,25,0.4);
 }
 
-.button:hover {					/* View my work button hover adjustment */
+.button:hover {				/* View my work button hover adjustment */
 	background-color: rgba(0, 0, 0, 0.75);
 }
 
-
-
-
-/************************************** OTHER ADJUSTMENTS **************************************/
-
-.linespace {		/* Space out paragraphs of text */
+.linespace {					/* Space out paragraphs of text */
 	margin-bottom: 20px;
 }
+
+/************************************** OTHER CHANGES **************************************/
 
 iframe {		/* Getting rid of video border */
 	border: 0;
 }
+
